@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import androidx.fragment.app.Fragment;
 
+import ru.terrakok.cicerone.Screen;
 import ru.terrakok.cicerone.android.support.SupportAppScreen;
 import ru.terrakok.cicerone.sample.ui.animations.ProfileActivity;
 import ru.terrakok.cicerone.sample.ui.animations.photos.SelectPhotoFragment;
@@ -27,7 +28,7 @@ public class Screens {
 
         public SampleScreen(int number) {
             this.number = number;
-            this.screenKey = getClass().getSimpleName() + "_" + number;
+            setScreenKey(getClass().getSimpleName() + "_" + number);
         }
 
         @Override

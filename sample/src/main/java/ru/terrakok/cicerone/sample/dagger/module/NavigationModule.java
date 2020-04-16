@@ -17,7 +17,7 @@ public class NavigationModule {
     private Cicerone<Router> cicerone;
 
     public NavigationModule() {
-        cicerone = Cicerone.create();
+        cicerone = Cicerone.Companion.create();
     }
 
     @Provides
